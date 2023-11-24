@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client"
 
 import Rotas from "./Rotas"
 
-const contentor = document.getElementbyId("root")
+const contentor = document.getElementById("root")
 const origem = createRoot(contentor) 
 
 origem.render(<Rotas/>)

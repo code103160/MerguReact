@@ -1,20 +1,46 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const Titulo = styled.div`
+  color: #2da9f3;
+  font-size: 32pt;
+  padding: 32px 0;
+  text-align: center;
+`
+const Campo = styled.div`
+  background: #303741;
+  border-radius: 16px;
+  padding: 16px;
+`
 
+const Conteudo = styled.div`
+  background: #3b424c;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  padding: 16px;
+`
 
-export default function Rotas() {
-    const Titulo = styled.div`
+export default function Rotas() {   
 
-    color: #2da9f3;
+  return (
+  <div>
+    <Titulo>
+      Mergulhando no React!
+    </Titulo>
 
-    font-size: 32pt;
+    <Campo>
 
-    padding: 32px 0;
+      <Conteudo>
+        Praesent hendrerit eros eu neque mattis, a congue tortor vulputate.
+      </Conteudo>
 
-    text-align: center;`
-
-  return (<Titulo>Mergulhando no React!</Titulo>)
+      <Conteudo>
+        Vivamus blandit, erat in lobortis placerat, mi nisi interdum urna.
+      </Conteudo>
+      
+    </Campo>
+  </div>
+  )
   
 }
 
