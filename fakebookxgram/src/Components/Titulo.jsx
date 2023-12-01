@@ -7,6 +7,6 @@ const ModeloTitulo = styled.div`
   padding: 32px 0;
   text-align: center;
 `
-export default function Titulo() {
-    return(<ModeloTitulo>Mergulhando no React!</ModeloTitulo>)
+export default function Titulo(props) {
+    return(<ModeloTitulo> { props.nome } </ModeloTitulo>)
 }
