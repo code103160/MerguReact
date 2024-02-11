@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const ModeloConteudo = styled.div` 
     background: ${
-        props => props.estado ? "white" : "#eee"
+        props => props.estado ? "white" : "#aaa"
     };
     margin-bottom: 16px;
     padding: 16px;
