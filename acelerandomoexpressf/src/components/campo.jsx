@@ -14,8 +14,14 @@ const CampoInterno = styled.div`
     justify-content: center;
 `
 
-export default function Campo() {
+export default function Campo(props) {
+
   return (
-    <div>campo</div>
+    <ModeloCampo>
+      <CampoInterno>
+        { props.children }
+      </CampoInterno>
+    </ModeloCampo>
   )
+
 }
