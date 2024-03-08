@@ -6,4 +6,4 @@ const configuracao = { useNewUrlParser: true, useUnifiedTopology: true }
 await mongosse.connect(endereco, configuracao)
 console.log("CONECTADO COM O BANCO DE DADOS!")
 
-mongoose.Promise = globa.Promise
+mongoose.Promise = global.Promise

@@ -1,13 +1,16 @@
 import express from "express";
 import cors from "cors";
+import "./conexao.js";
+import { usuario } from "./bancodados.js";
 
 const servidor = express()
 
 servidor.use(cors())
 servidor.use(express.json())
 
-servidor.get("/", function(requisicao, resposta) {
-    resposta.json({ mensagem: "ROTA / GET" })
+servidor.get("/", async function(requisicao, resposta) {
+    const resultados = await usuario.find()
+    resposta.status(200).json(resultados)
 })
 
 servidor.post("/", function(requisicao, resposta){
