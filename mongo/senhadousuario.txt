@@ -1,0 +1,3 @@
+LreO1tH5Cg2jf6SF Senha do Mongoose proj05
+
+mongodb+srv://LucacsCoutinho:LreO1tH5Cg2jf6SF@mon05.gp2gl4l.mongodb.net/?retryWrites=true&w=majority&appName=Mon05

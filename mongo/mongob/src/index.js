@@ -13,8 +13,16 @@ servidor.get("/", async function(requisicao, resposta) {
     resposta.status(200).json(resultados)
 })
 
-servidor.post("/", function(requisicao, resposta){
-    resposta.json({ mensagem: "ROTA / POST" })
+servidor.post("/", async function(requisicao, resposta){
+    try {
+        const novoUsuario = new usuario(requisicao.body)
+        const resultado = await novoUsuario.save()
+        resposta.status(201).json(resultado)
+    }
+    catch(erro){
+        console.log(erro.message)
+        resposta.sendStatus(500)
+    }
 })
 
 servidor.listen(4000, function() {
