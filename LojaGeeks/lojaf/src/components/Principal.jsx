@@ -12,6 +12,12 @@ const Modelo = styled.div`
 const Produto = styled.div`
     background: #fff;
     padding: 8px;
+    transition: 0.2s;
+
+    &:hover {
+        transform: rotateZ(2deg) scale(1.1);
+        transition: 0.2;
+    }
 `
 
 const ProdutoImagem = styled.img`
@@ -24,16 +30,20 @@ const ProdutoDados = styled.div`
     text-align: center;
 `
 
-export default function Principal() {
+export default function Principal(props) {
   return (
     <Modelo>
-        <Produto>
-            <ProdutoImagem src="https://picsum.photos/800/800" alt="Foto do Produto"/>
-            <ProdutoDados>
-                <div> Modelo </div>
-                <div> R$ 1.000,000 </div>
-            </ProdutoDados>
-        </Produto>
+        {
+            props.produtos.map((produto, indice) => {
+                return(<Produto key={ indice }>
+                    <ProdutoImagem src={ produto.imagens[0]} alt="Foto do Produto"/>
+                    <ProdutoDados>
+                        <div> { produto.modelo } </div>
+                        <div> R$ { produto.preco } </div>
+                    </ProdutoDados>
+                </Produto>)
+            })
+        }
     </Modelo>
   )
 }

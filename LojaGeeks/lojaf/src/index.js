@@ -6,4 +6,4 @@ import Rotas from './rotas';
 const contentor = document.getElementById("root")
 const origem = createRoot(contentor)
 
-origem.render = (<Rotas/>)
+origem.render(<Rotas/>)
