@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import notifier from "node-notifier";
 import morgan from "morgan";
-import rotas from "./Rotas";
+import rotas from "./Rotas.js";
 
 const servidor = express()
 
