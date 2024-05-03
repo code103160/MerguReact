@@ -17,7 +17,11 @@ export default function Carrinho() {
     useEffect(() => {
         var total = 0
 
-        carrinho.map((codigo) => {})
+        carrinho.map((codigo) => {
+            for (const produto of ProdutosExemplo)
+                if (produto.codigo === codigo)
+                    total += parseInt(produto.preco)
+        })
 
         definirPreco(total)
     }, [carrinho])
@@ -42,6 +46,7 @@ export default function Carrinho() {
                     <td> R${ produto.preco }.00 </td>
                 </tr>
         }
+        <h1>Total R$ { preco }.00</h1>
     })}
     </>
   )
