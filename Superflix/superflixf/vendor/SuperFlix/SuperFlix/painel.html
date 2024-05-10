@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperFlix</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/title.png" type="image/x-icon">
+</head>
+<body>
+  <div class="principal">
+    <div class="navegacao">
+      <img src="img/title.png" alt="title">
+      <a href="index.html">Início</a>
+      <a href="painel.html">Filmes</a>
+      <a href="explorar.html">Séries</a>
+      <a href="reprodutor.html">Em Alta</a>
+    </div>
+    <div class="painel">
+      <div class="modelo">
+        <div class="barra">
+          <img src="img/title.png" alt="logo">
+        </div>
+        <div class="mensagem">
+          <div class="formulario">
+            <form action="get">
+              <input value=""
+                type="url" name="capa" placeholder="Capa" required/>
+          
+              <input value=""
+                type="url" name="trilha" placeholder="Trilha" required/>
+          
+              <input value=""
+                type="text" name="titulo" placeholder="Título" required/>
+          
+              <input value=""
+                type="text" name="descricao" placeholder="Descrição..." required/>
+          
+              <input value=""
+                type="text" name="genero" placeholder="Gênero" required/>
+              
+              <input value=""
+                type="number" name="ano" placeholder="Ano (ex.: 2020)" required/>
+          
+              <input value=""
+                type="number" name="duracao" placeholder="Duração (ex.: 90min)" required/>
+          
+              <input value=""
+                type="number" name="faixa" placeholder="Faixa etária (ex.: +18)" required/>
+              
+              <input type="submit" value="Enviar" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
