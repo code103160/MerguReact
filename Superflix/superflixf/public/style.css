@@ -19,7 +19,7 @@ body {
   background: #444;
 }
 
-/* painel */
+/* painel 
 .principal {
   background-image: url('./img/fundo.jpg');
   background-size: cover;
@@ -56,6 +56,7 @@ body {
   flex-direction: column;
   gap: 16px;
 }
+*/
 /* ----- */
 /* Navegação */
 
