@@ -3,6 +3,7 @@ import Navegacao from '../components/Navegacao'
 import ProdutosExemplo from '../datas/ProdutosExemplo'
 import Janela from '../components/Janela'
 import ObterCarrinho from '../functions/ObterCarrinho'
+import Pagamento from '../functions/Pagamento'
 
 export default function Carrinho() {
 
@@ -47,7 +48,10 @@ export default function Carrinho() {
                 </tr>
         }
         <h1>Total R$ { preco }.00</h1>
+
+        
     })}
+    <button onClick={ Pagamento }> Pagamento Por Pix </button>
     </>
   )
 }
