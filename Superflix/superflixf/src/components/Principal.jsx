@@ -38,5 +38,3 @@ export default function Principal(props) {
     </Modelo>
   )
 }
-
-``

@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import ConteudoInicial from "../datas/ConteudoInicial.js"
+import SalvarConteudo from '../functions/SalvarConteudo.js'
 
 const Modelo = styled.div`
     background: #fff;
@@ -14,13 +15,35 @@ const ModeloInterno = styled.div`
     gap: 16px;
 `
 
+
 export default function Formulario() {
-    const [ conteudo, definirConteudo ] = useState(ConteudoInicial)
-    function Mudar(evento) {
-        const campo = evento.target.name
-        const valor = evento.target.value
-        definirConteudo({...conteudo, [campo]: valor})
+  
+  const [ conteudo, definirConteudo ] = useState(ConteudoInicial)
+  function Mudar(evento) {
+    const campo = evento.target.name
+    const valor = evento.target.value
+    definirConteudo({...conteudo, [campo]: valor})
     }
+    
+    function Enviar(evento){
+    
+      SalvarConteudo(conteudo)
+      .then( function(resposta) {
+        if (resposta.status === 201)
+          alert("Conteudo enviado com sucesso!")
+        else
+          console.log(resposta)
+      })
+      .catch((erro) => {
+        console.log(erro)
+      })
+    
+      evento.preventDefault()
+    
+      definirConteudo(ConteudoInicial)
+    }
+
+
   return (
     <Modelo>
         <ModeloInterno onSubmit={ Enviar }>

@@ -58,7 +58,7 @@ body {
 }
 */
 /* ----- */
-/* Navegação */
+/* Navegação 
 
 .navegacao {
   align-items: center;
@@ -72,11 +72,11 @@ body {
 .navegacao > img {
   height: 48px;
 }
-
 .navegacao > a {
   color: #fff;
   text-decoration: none;
-}
+  }
+*/
 
 .destaque {
   background-image: url('./img/fundo.jpg');
