@@ -76,7 +76,7 @@ body {
   color: #fff;
   text-decoration: none;
   }
-*/
+
 
 .destaque {
   background-image: url('./img/fundo.jpg');
@@ -87,18 +87,18 @@ body {
 .sessao {
   margin: 32px 0;
   padding: 0 32px;
-}
-
-.sessao > .titulo {
-  font-size: 16pt;
-}
-
-.sessao > .interno {
-  display: flex;
-  gap: 16px;
-  overflow-x: scroll;
-}
-
+  }
+  
+  .sessao > .titulo {
+    font-size: 16pt;
+    }
+    
+    .sessao > .interno {
+      display: flex;
+      gap: 16px;
+      overflow-x: scroll;
+      }
+      
 img.conteudo {
   border-radius: 4px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
@@ -113,6 +113,7 @@ img.conteudo:hover {
   transform: scale(110%);
   transition: 0.2s;
 }
+*/
 /* ----- */
 /* Videos */
 
