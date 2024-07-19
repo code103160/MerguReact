@@ -31,21 +31,22 @@ export default function Explorar() {
       else if (resposta.status == 500)
         alert("Problema com o Servidor!")
       else
-        console.log(reposta)
+        console.log(resposta)
     })
     .catch((erro) => {
       console.log(erro)
     })
   }, [])
+  
+  generos.length > 0 &&
+      generos.map((genero, indice) => {
+        console.log(generos)
+        
+        return <h1> { genero } </h1>
+  })
 
   return <Destaque fundo="/fundo.jpg">
       <Navegacao/>
     </Destaque>
-    
-
-    { generos.length > 0 &&
-      generos.map((genero, indice) => {})
-    }
-  
   
 }
