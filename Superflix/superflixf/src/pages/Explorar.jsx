@@ -38,15 +38,18 @@ export default function Explorar() {
     })
   }, [])
   
-  generos.length > 0 &&
-      generos.map((genero, indice) => {
-        console.log(generos)
-        
-        return <h1> { genero } </h1>
-  })
-
-  return <Destaque fundo="/fundo.jpg">
+  return (
+    <Destaque fundo="/fundo.jpg">
       <Navegacao/>
-    </Destaque>
+      { generos.length > 0 &&
+          generos.map((genero, indice) => {
+            return <Sessao>
+              key = {indice}
+              genero = {genero}
+              conteudos = {conteudos}
+            </Sessao>
+            }) }
+
+    </Destaque>)
   
-}
+  }
