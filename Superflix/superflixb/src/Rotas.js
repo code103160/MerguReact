@@ -1,7 +1,7 @@
 import express, { application } from "express";
-import { conteudo } from "./database/Conteudo";
+import { conteudo } from "./database/Conteudo.js";
 import { Types, isValidObjectId } from "mongoose";
-import Joi, { func } from "joi";
+import Joi from "joi";
 import { usuario } from "./database/Usuarios.js";
 import crypto from "crypto-js";
 
@@ -111,7 +111,7 @@ rotas.post("/entrar", async (requisicao, resposta) => {
 
     const esquema = Joi.object({
         email: Joi.string().email().max(128).required(),
-        senha: Joi.string().requiered()
+        senha: Joi.string().required()
     })
 
     try{
