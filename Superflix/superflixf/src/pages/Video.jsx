@@ -42,7 +42,7 @@ export default function Video() {
         ObterUnicoConteudo(codigo)
 
         .then((resposta)=> {
-            if (resposta.status == 200)
+            if (resposta.status === 200)
                 definirConteudo(resposta.data)
             else
                 console.log(resposta)

@@ -29,15 +29,11 @@ rotas.get("/generos", (requisicao, resposta) => {
     .then((resultados) => {
         if (resultados.length > 0) {
             var lista = new Array()
-
             resultados.map((conteudo) => {
-                if (!lista.includes(conteudo.genero))
-                    return lista.push(conteudo.genero)
+                if (!lista.includes(conteudo.genero)) return lista.push(conteudo.genero)
             })
-
             resposta.status(200).json(lista)
         }
-        
         else resposta.status(404).json({
             mensagem: "Nenhum resultado encontrado!"
         })

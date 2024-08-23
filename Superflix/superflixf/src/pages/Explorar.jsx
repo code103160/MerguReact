@@ -13,7 +13,7 @@ export default function Explorar() {
 
     ObterConteudos()
     .then((resposta) => {
-      if (resposta.status == 200)
+      if (resposta.status === 200)
         definirConteudos(resposta.data)
       else
         console.log(resposta)
@@ -24,11 +24,11 @@ export default function Explorar() {
 
     ObterGeneros()
     .then((resposta) => {
-      if (resposta.status == 200)
+      if (resposta.status === 200)
         definirGeneros(resposta.data)
-      else if (resposta.status == 404)
+      else if (resposta.status === 404)
         alert("Nenhum Gênero Encontrado!")
-      else if (resposta.status == 500)
+      else if (resposta.status === 500)
         alert("Problema com o Servidor!")
       else
         console.log(resposta)
