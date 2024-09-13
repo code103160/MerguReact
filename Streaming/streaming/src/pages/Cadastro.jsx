@@ -1,14 +1,13 @@
 import React from 'react'
+import Navegar from '../components/Navegar'
 
 export default function Cadastro() {
-  return (
-    <div>
-        <form>
-            <div> Cadastro </div>
-            <input type="text" placeholder="Email" required/>
-            <input type="password" placeholder="****" required/>
-            <input type="submit" value="Entrar"/>
-        </form>
+  return (<>
+    <div class="container">
+        <Navegar/>
     </div>
+    <div class="container">
+    </div>
+  </>
   )
 }
