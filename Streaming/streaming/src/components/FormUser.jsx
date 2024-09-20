@@ -10,7 +10,7 @@ export default function FormUser(props) {
           <form action={ props.address }>
             <input type="email" class="form-control mt-3 mb-3" aria-describedby="email" placeholder="Seu E-mail aqui"/>
             <input type="password" class="form-control mt-3 mb-3" placeholder="Senha"/>
-            { (props.confirmation == "true")? <input type="password" class="form-control mt-3 mb-3" id="senhaconfirmar" placeholder="Confirme a Senha"/>: ""}
+            { (props.confirmation === "true")? <input type="password" class="form-control mt-3 mb-3" id="senhaconfirmar" placeholder="Confirme a Senha"/>: ""}
             <button type="submit" class="btn btn-info"> { props.botao } </button>
           </form>
         </div>     

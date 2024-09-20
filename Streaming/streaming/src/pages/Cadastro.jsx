@@ -1,13 +1,11 @@
 import React from 'react'
 import Navegar from '../components/Navegar'
+import FormUser from '../components/FormUser'
 
 export default function Cadastro() {
-  return (<>
-    <div class="container">
-        <Navegar/>
-    </div>
-    <div class="container">
-    </div>
-  </>
+  return (<div>
+      <Navegar/>
+      <FormUser titulo="Cadastre-se" botao="Confirmar" adress="#" confirmation="true"/>
+  </div>
   )
 }

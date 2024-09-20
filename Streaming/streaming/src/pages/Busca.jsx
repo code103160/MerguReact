@@ -1,14 +1,12 @@
 import React from 'react'
 import Navegar from '../components/Navegar'
+import FormFilm from '../components/FormFilm'
 
 export default function Busca() {
   return (
     <div>
-        <form>
-            <input type="text" placeholder="Genero"/>
-            <input type="text" placeholder="title"/>
-            <input type="submit" value="Busca"/>
-        </form>
+      <Navegar/>
+      <FormFilm/>
     </div>
   )
 }
