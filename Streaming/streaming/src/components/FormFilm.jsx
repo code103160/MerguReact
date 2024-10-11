@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 export default function FormFilm() {
   return (
     <div>
-        <Container class="container" data-bs-theme="dark">
+        <Container class="container mb-3" data-bs-theme="dark">
             <form class="d-flex">
                 <input type="text" class="form-control me-2" id="nome" placeholder="Nome do Filme" aria-label="Nomes"/>
                 <select class="form-select me-2" aria-label="Generos">
