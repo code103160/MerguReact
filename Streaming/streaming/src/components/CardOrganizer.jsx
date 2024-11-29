@@ -127,6 +127,7 @@ export default function CardOrganizer() {
     }
 ])
 
+
   // useEffect(() => {
   //   fetch()
   //     .then(response => response.json())

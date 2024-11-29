@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container'
 
+
 export default function FormFilm() {
+
+  const [ conteudo, definirConteudo ] = useState()
+
+  function Selecionar(evento) {
+    const campo = evento.target.name
+    const valor = evento.target.value
+    definirConteudo({ ...conteudo, [campo]: valor})
+  }
+
+
+
+
+
   return (
     <div>
         <Container class="container mb-3" data-bs-theme="dark">
