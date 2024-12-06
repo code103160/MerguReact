@@ -6,7 +6,7 @@ export default function Inicio() {
   return (
     <div>
       <Navegar/>
-      <FormUser titulo="Usuario" botao="Entrar" address="#" confirmation="false"/>
+      <FormUser titulo="Usuario" botao="Entrar" address="/busca" confirmation="false"/>
     </div>
   )
 }

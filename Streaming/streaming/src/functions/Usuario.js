@@ -1,14 +1,14 @@
 import axios from "axios";
 
-export default function Usuario() {
+export default function Usuario(email, senha) {
     return axios({
         method: "POST",
-        url: "http://200.100.0.14/api/v1/user/registration",
+        url: "http://200.100.0.08/api/v1/session/create",
         params: {
             "user":{
-                "email": "",
-                "password": ""
-            },
+                "email": email,
+                "password": senha
+            }
         }
     })
 }

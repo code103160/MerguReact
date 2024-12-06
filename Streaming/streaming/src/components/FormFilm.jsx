@@ -11,11 +11,6 @@ export default function FormFilm() {
     const valor = evento.target.value
     definirConteudo({ ...conteudo, [campo]: valor})
   }
-
-
-
-
-
   return (
     <div>
         <Container class="container mb-3" data-bs-theme="dark">

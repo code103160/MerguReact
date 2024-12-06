@@ -9,10 +9,7 @@ export default function Generos() {
                 "user":{
                     "email":"lucacoutinho@mail.com",
                     "access_token": "30db489481ffadbc4d731729887173"
-                },
-                "q":{"a"
-
-                },
+                }
             }
         }
     })
