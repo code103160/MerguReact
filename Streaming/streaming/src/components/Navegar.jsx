@@ -4,11 +4,11 @@ import Nav from 'react-bootstrap/Nav';
 
 export default function Navegar() {
   return (
-    <Nav class="navbar navbar-expand-lg bg-dark mb-3 " data-bs-theme="dark">
-        <Container class="container">
-          <a class="navbar-brand" href="/"> Superflix </a>
+    <Nav className="navbar navbar-expand-lg bg-dark mb-3 " data-bs-theme="dark">
+        <Container className="container">
+          <a className="navbar-brand" href="/"> Superflix </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -16,24 +16,24 @@ export default function Navegar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="/">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Login</a>
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="/">Login</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="cadastro.html">Logout</a>
+              <li className="nav-item">
+                <a className="nav-link" aria-current="page" href="cadastro.html">Logout</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/cadastro">Register</a>
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="/cadastro">Register</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/busca">Filmes</a>
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="/busca">Filmes</a>
               </li>
             </ul>
           </div>

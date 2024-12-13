@@ -13,18 +13,18 @@ export default function FormFilm() {
   }
   return (
     <div>
-        <Container class="container mb-3" data-bs-theme="dark">
-            <form class="d-flex">
-                <input type="text" class="form-control me-2" id="nome" placeholder="Nome do Filme" aria-label="Nomes"/>
-                <select class="form-select me-2" aria-label="Generos">
+        <Container className="container mb-3" data-bs-theme="dark">
+            <form className="d-flex">
+                <input type="text" className="form-control me-2" id="nome" placeholder="Nome do Filme" aria-label="Nomes"/>
+                <select className="form-select me-2" aria-label="Generos">
                     <option value>-Vazio-</option>
                     <option value="acao">Ação</option>
                     <option value="romance">Romance</option>
                     <option value="comedia">Comédia</option>
                     <option value="drama">Drama</option>
                 </select>
-                <input type="date" class="form-control me-2" />
-                <button type="submit" class="btn btn-info">Pesquisar</button>
+                <input type="date" className="form-control me-2" />
+                <button type="submit" className="btn btn-info">Pesquisar</button>
             </form>
         </Container>
     </div>
