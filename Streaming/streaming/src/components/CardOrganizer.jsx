@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import FilmCard from './FilmCard'
+import Filmes from '../functions/Filmes';
 
 export default function CardOrganizer() {
 
@@ -127,11 +128,10 @@ export default function CardOrganizer() {
     }
 ])
 
-
-  // useEffect(() => {
-  //   fetch()
-  //     .then(response => response.json())
-  // }, []);
+  useEffect(() => {
+     fetch()
+       .then(response => response.json())
+  }, []);
 
   return (
     <div className="row row-cols-4">
