@@ -1,14 +1,14 @@
 import axios from "axios";
 
-export default function Generos() {
+export default function Generos(mail, token) {
     return axios({
         method: "GET",
-        url: "http://localhost:4000/api/v1/movies",
+        url: "http://200.100.0.14:80/api/v1/movies",
         params: {
             "data":{
                 "user":{
-                    "email":"",
-                    "access_token": ""
+                    "email":mail,
+                    "access_token": token
                 }
             }
         }
