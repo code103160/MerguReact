@@ -7,6 +7,7 @@ export default function FilmCard(props) {
       <div className="card-body">
         <h5 className="card-title">{ props.titulo }</h5>
         <p className="card-text">{ props.text }</p>
+        <a href= { props.link } className="stretched-link"></a>
       </div>
     </div>
   )
