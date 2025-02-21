@@ -27,13 +27,13 @@ export default function Navegar() {
                 <a className="nav-link active" aria-current="page" href="/">Login</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="cadastro.html">Logout</a>
-              </li>
-              <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/cadastro">Register</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/busca">Filmes</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" aria-current="page" href="cadastro.html">Logout</a>
               </li>
             </ul>
           </div>
