@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logout from '../functions/Logout'
 
 export default function SessionDestroyer() {

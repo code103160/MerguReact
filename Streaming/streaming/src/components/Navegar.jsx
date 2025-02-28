@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import SessionDestroyer from './SessionDestroyer';
 
 export default function Navegar() {
+
+  const toke = useState(sessionStorage.getItem("streamingToken"));
+
   return (
     <Nav className="navbar navbar-expand-lg bg-dark mb-3 " data-bs-theme="dark">
         <Container className="container">
@@ -21,9 +25,6 @@ export default function Navegar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/">Login</a>
               </li>
               <li className="nav-item">
@@ -32,9 +33,7 @@ export default function Navegar() {
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/busca">Filmes</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="cadastro.html">Logout</a>
-              </li>
+              { ( toke !== "")? <li className="nav-item"> <SessionDestroyer/> </li>:"" }
             </ul>
           </div>
         </Container>
