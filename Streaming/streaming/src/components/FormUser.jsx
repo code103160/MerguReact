@@ -77,7 +77,7 @@ export default function FormUser(props) {
                 <input onChange={ ValidarEmail } type="email" className="form-control mt-3 mb-3" aria-describedby="email" placeholder="Seu E-mail aqui"/>
                 <input onChange={ ValidarSenha } type="password" className="form-control mt-3 mb-3" placeholder="Senha"/>
                 <input onChange={ ConfirmarSenha }type="password" className="form-control mt-3 mb-3" id="senhaconfirmar" placeholder="Confirme a Senha"/>
-                <button type="submit" className="btn btn-info"> { props.botao } </button>
+                { (confirmar === senha && confirmar !== "")? <button type="submit" className="btn btn-info"> { props.botao } </button> : "" }
               </form>
             </div>     
           </div>

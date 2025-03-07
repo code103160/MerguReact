@@ -3,7 +3,7 @@ import axios from "axios";
 export default function Generos(mail, token) {
     return axios({
         method: "GET",
-        url: "http://200.100.0.4:80/api/v1/movies",
+        url: "http://200.100.0.7:80/api/v1/movies",
         params: {
             "data":{
                 "user":{
