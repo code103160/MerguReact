@@ -5,6 +5,7 @@ import SessionDestroyer from './SessionDestroyer';
 
 export default function Navegar() {
 
+  const mail = useState(sessionStorage.getItem("streamingEmail"));
   const toke = useState(sessionStorage.getItem("streamingToken"));
 
   return (
