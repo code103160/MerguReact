@@ -5,7 +5,6 @@ import SessionDestroyer from './SessionDestroyer';
 
 export default function Navegar() {
 
-  const mail = useState(sessionStorage.getItem("streamingEmail"));
   const toke = useState(sessionStorage.getItem("streamingToken"));
 
   return (
@@ -25,16 +24,20 @@ export default function Navegar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">Login</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/cadastro">Register</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/busca">Filmes</a>
-              </li>
-              { ( toke !== "")? <li className="nav-item"> <SessionDestroyer/> </li>:"" }
+            { ( toke[0] === null)? <>
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="/">Login</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="/cadastro">Register</a>
+                </li></>
+              :
+              <>
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="/busca">Filmes</a>
+                </li>
+                <li className="nav-item"> <SessionDestroyer/> </li>
+              </> }
             </ul>
           </div>
         </Container>
